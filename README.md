@@ -2,9 +2,10 @@
 a builder-design-pattern usage to set view textColor or backgroundcolor or backgrounddrawable
 
 
-@Description£º ¹¹½¨Ò»¸ö¼òµ¥µÄÁ´Ê½µ÷ÓÃ, À´ÉèÖÃËùÓĞviewµÄÑÕÉ«, ¾Í²»ÓÃÃ¿´Îµ¥¶ÀÈ¥setTextColor
+@Descriptionï¼š æ„å»ºä¸€ä¸ªç®€å•buildè®¾è®¡æ¨¡å¼çš„é“¾å¼è°ƒç”¨, æ¥è®¾ç½®æ‰€æœ‰viewçš„é¢œè‰², å°±ä¸ç”¨æ¯æ¬¡å•ç‹¬å»setTextColor
  * usage: new ColorSetter.Builder(getActivity())
- *            .textColor(textView , color)
- *            .textColor(R.id.text , color)
- *            .create()
- *            .setColor();
+            .textColor(textView , color)
+            .backgroundColor(R.id.text , color)
+            .backgroundDrawable(R.id.text , color)
+            .create()
+            .setColor();
