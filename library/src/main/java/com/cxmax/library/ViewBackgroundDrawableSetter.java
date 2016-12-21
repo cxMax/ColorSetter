@@ -1,8 +1,7 @@
 package com.cxmax.library;
 
+import android.graphics.drawable.GradientDrawable;
 import android.view.View;
-
-import com.meizu.cloud.app.utils.ImageUtil;
 
 /**
  * @Author：caixi on 16-12-21 14:08
@@ -18,6 +17,8 @@ public class ViewBackgroundDrawableSetter extends ViewSetter {
     @Override
     protected void setColor() {
         if (mView == null) return;
-        mView.setBackground(ImageUtil.gainColorDrawable(getColor()));
+        GradientDrawable drawable = new GradientDrawable();
+        drawable.setColor(getColor());
+        mView.setBackground(drawable);
     }
 }
